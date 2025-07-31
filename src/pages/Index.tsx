@@ -297,8 +297,8 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-adventure-dark">Телефон</h3>
                   <p className="text-gray-600 mb-2">Звоните ежедневно с 9:00 до 21:00</p>
-                  <a href="tel:+79991234567" className="text-2xl font-bold text-adventure-orange hover:text-adventure-green transition-colors">
-                    +7 (999) 123-45-67
+                  <a href="tel:+79284877148" className="text-2xl font-bold text-adventure-orange hover:text-adventure-green transition-colors">
+                    +7 (928) 487-71-48
                   </a>
                 </div>
               </div>
@@ -310,8 +310,8 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-adventure-dark">WhatsApp</h3>
                   <p className="text-gray-600 mb-2">Быстрые ответы и консультации</p>
-                  <a href="https://wa.me/79991234567" className="text-2xl font-bold text-adventure-orange hover:text-adventure-green transition-colors">
-                    +7 (999) 123-45-67
+                  <a href="https://wa.me/79284877148" className="text-2xl font-bold text-adventure-orange hover:text-adventure-green transition-colors">
+                    +7 (928) 487-71-48
                   </a>
                 </div>
               </div>
@@ -409,7 +409,7 @@ const Index = () => {
               className="bg-adventure-orange hover:bg-adventure-orange/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"
             >
               <Icon name="Phone" className="mr-2" size={20} />
-              Позвонить Сейчас
+              +7 (928) 487-71-48
             </Button>
             <Button 
               variant="outline" 
@@ -417,7 +417,7 @@ const Index = () => {
               className="border-white text-white hover:bg-white hover:text-adventure-green px-8 py-4 text-lg font-semibold transition-all duration-300"
             >
               <Icon name="MessageCircle" className="mr-2" size={20} />
-              Написать в WhatsApp
+              WhatsApp
             </Button>
           </div>
         </div>
@@ -440,7 +440,7 @@ const Index = () => {
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-center">
                   <Icon name="Phone" size={16} className="mr-2" />
-                  +7 (999) 123-45-67
+                  +7 (928) 487-71-48
                 </div>
                 <div className="flex items-center">
                   <Icon name="Mail" size={16} className="mr-2" />
