@@ -184,6 +184,97 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Customer Reviews Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-adventure-dark">
+              Отзывы Наших Путешественников
+            </h2>
+            <p className="text-xl text-gray-600">
+              Реальные истории от тех, кто уже побывал в наших приключениях
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/1312e147-249a-4e29-883e-eccf6970d861.jpg" 
+                    alt="Анна - участница тура"
+                    className="w-16 h-16 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-adventure-dark">Анна К.</h4>
+                    <p className="text-sm text-gray-500">Горные Тропы</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-600 leading-relaxed">
+                  "Невероятное приключение! Виды с горных вершин просто захватывают дух. 
+                  Гиды профессиональные, безопасность на высшем уровне. Обязательно поеду еще!"
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/748a2d05-2517-43f1-9420-c08fd2b63366.jpg" 
+                    alt="Мария - участница тура"
+                    className="w-16 h-16 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-adventure-dark">Мария В.</h4>
+                    <p className="text-sm text-gray-500">Лесные Приключения</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-600 leading-relaxed">
+                  "Скрытые водопады, которые мы нашли - это что-то! Фотографии получились 
+                  потрясающие. Команда очень дружелюбная, всё организовано идеально."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/fdfed470-5afe-4320-ad9c-3219780030a5.jpg" 
+                    alt="Елена - участница тура"
+                    className="w-16 h-16 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-adventure-dark">Елена С.</h4>
+                    <p className="text-sm text-gray-500">Экстрим Сафари</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-600 leading-relaxed">
+                  "Адреналин зашкаливал! Экстремальные маршруты - это мое. Джипы мощные, 
+                  инструкторы знают свое дело. Лучший отдых в этом году!"
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
