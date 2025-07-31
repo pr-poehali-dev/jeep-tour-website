@@ -184,6 +184,124 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-adventure-dark">
+              Свяжитесь с Нами
+            </h2>
+            <p className="text-xl text-gray-600">
+              Готовы организовать ваше приключение? Мы всегда на связи!
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-adventure-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Phone" size={24} className="text-adventure-orange" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-adventure-dark">Телефон</h3>
+                  <p className="text-gray-600 mb-2">Звоните ежедневно с 9:00 до 21:00</p>
+                  <a href="tel:+79991234567" className="text-2xl font-bold text-adventure-orange hover:text-adventure-green transition-colors">
+                    +7 (999) 123-45-67
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-adventure-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="MessageCircle" size={24} className="text-adventure-orange" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-adventure-dark">WhatsApp</h3>
+                  <p className="text-gray-600 mb-2">Быстрые ответы и консультации</p>
+                  <a href="https://wa.me/79991234567" className="text-2xl font-bold text-adventure-orange hover:text-adventure-green transition-colors">
+                    +7 (999) 123-45-67
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-adventure-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Mail" size={24} className="text-adventure-orange" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-adventure-dark">Email</h3>
+                  <p className="text-gray-600 mb-2">Подробные консультации и бронирование</p>
+                  <a href="mailto:info@jeeptours.ru" className="text-xl font-bold text-adventure-orange hover:text-adventure-green transition-colors">
+                    info@jeeptours.ru
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-adventure-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="MapPin" size={24} className="text-adventure-orange" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-adventure-dark">Офис</h3>
+                  <p className="text-gray-600 mb-2">Приезжайте к нам для личной консультации</p>
+                  <p className="text-xl font-bold text-adventure-dark">
+                    г. Москва, ул. Приключений, 15<br />
+                    <span className="text-base font-normal text-gray-600">Пн-Пт: 10:00-19:00, Сб-Вс: 11:00-17:00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-gray-50 p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold mb-6 text-adventure-dark">
+                Быстрая Консультация
+              </h3>
+              <form className="space-y-4">
+                <div>
+                  <input 
+                    type="text" 
+                    placeholder="Ваше имя" 
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-adventure-orange focus:border-transparent outline-none transition-all"
+                  />
+                </div>
+                <div>
+                  <input 
+                    type="tel" 
+                    placeholder="+7 (999) 123-45-67" 
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-adventure-orange focus:border-transparent outline-none transition-all"
+                  />
+                </div>
+                <div>
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-adventure-orange focus:border-transparent outline-none transition-all">
+                    <option>Выберите тур</option>
+                    <option>Горные Тропы (от 8 000 ₽)</option>
+                    <option>Лесные Приключения (от 6 500 ₽)</option>
+                    <option>Экстрим Сафари (от 12 000 ₽)</option>
+                    <option>Индивидуальный маршрут</option>
+                  </select>
+                </div>
+                <div>
+                  <textarea 
+                    rows={4} 
+                    placeholder="Расскажите о ваших пожеланиях..."
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-adventure-orange focus:border-transparent outline-none transition-all resize-vertical"
+                  ></textarea>
+                </div>
+                <Button 
+                  type="submit"
+                  className="w-full bg-adventure-orange hover:bg-adventure-orange/90 text-white py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"
+                >
+                  Получить Консультацию
+                  <Icon name="Send" className="ml-2" size={20} />
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 bg-adventure-green text-white">
         <div className="container mx-auto text-center px-4">
@@ -191,7 +309,7 @@ const Index = () => {
             Готовы к Приключению?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Свяжитесь с нами сегодня и забронируйте свой незабываемый джип-тур!
+            Забронируйте свой незабываемый джип-тур прямо сейчас!
             Наши эксперты помогут выбрать идеальный маршрут для вас.
           </p>
           <div className="space-x-4">
